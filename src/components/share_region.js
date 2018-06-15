@@ -3,28 +3,30 @@ import React, { Component } from 'react';
 export default class ShareRegion extends Component{
   render(){
     return (
-      <div className="jumbotron share-region bg-success container text-center text-white">
-        <div className="row">Compartilhe com seus amigos!</div>
-        <div className="row">Traga seus amigos para ver os resultados dos jogos!</div>
-        <div className="row">
-          <div className="col col-sm-1">
-            fb
+      <section id="share-region">
+        <div className="share-region bg-success container text-center text-white">
+          <h2>Compartilhe com seus amigos!</h2>
+          <span>Traga seus amigos para ver os resultados dos jogos!</span>
+          <div className="row">
+            <div className="col col-sm-1">
+              fb
+            </div>
+            <div className="col col-sm-1">
+              tw
+            </div>
+            <div className="col col-sm-1">
+              rss
+            </div>
+            <div className="col col-sm-1">
+              inst
+            </div>
+            <div className="col col-sm-1">
+              g+
+            </div>
           </div>
-          <div className="col col-sm-1">
-            tw
-          </div>
-          <div className="col col-sm-1">
-            rss
-          </div>
-          <div className="col col-sm-1">
-            inst
-          </div>
-          <div className="col col-sm-1">
-            g+
-          </div>
+          <span className="align-bottom">Bolão da copa</span>
         </div>
-        <div className="row">Bolão da copa</div>
-      </div>
+      </section>
     );
   }
 }

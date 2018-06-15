@@ -11,10 +11,10 @@ export default class App extends Component {
           <div className="container d-flex flex-column flex-md-row justify-content-between">
           Placar da Copa do Mundo FIFA 2018
           </div>
-      </nav>
-      <HeaderRegion/>
-      <GroupList/>
-      <ShareRegion/>
+        </nav>
+        <HeaderRegion/>
+        <GroupList/>
+        <ShareRegion/>
       </div>
       );
   }

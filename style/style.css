@@ -1,3 +1,13 @@
 .div-with-bg-img{
     background-image: url('http://riotimesonline.com/wp-content/uploads/2018/04/neymar_brazil.jpg');
+    padding: 50px;
+    padding-right: 200px;
+}
+
+.share-region{
+    padding: 50px;
+}
+
+.group-list{
+    padding: 50px;
 }
