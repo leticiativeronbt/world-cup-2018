@@ -13,12 +13,12 @@ class GroupList extends Component{
   }
   render(){
     return(
-    <div className="div-group">
-      <h1>Resultado dos jogos</h1>
+      <div className="jumbotron share-region bg-light container-fluid text-center">
+      <h2>Resultado dos jogos</h2>
       <table className="table table-hover">
         <thead>
           <tr>
-            <th>Name</th>
+            <th>Grupo</th>
           </tr>
         </thead>
         <tbody>

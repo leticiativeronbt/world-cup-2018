@@ -6,12 +6,16 @@ import HeaderRegion from './header_region';
 export default class App extends Component {
   render() {
     return (
-      <div>
-      <h3>Placar da Copa</h3>
+      <div className="container-fluid">
+        <nav className="site-header navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container d-flex flex-column flex-md-row justify-content-between">
+          Placar da Copa do Mundo FIFA 2018
+          </div>
+      </nav>
       <HeaderRegion/>
       <GroupList/>
       <ShareRegion/>
       </div>
-    );
+      );
   }
 }
