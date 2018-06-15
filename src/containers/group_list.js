@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import GroupDetail from '../components/group_detail';
 
 class GroupList extends Component{
-  renderGroup(groupData){
+  renderGroupDetail(groupData){
     console.log(groupData);
-    const name = groupData.city.Name;
+    const name = groupData.Key;
     return (
-      <tr key={name}>
-        <td>{name}</td>
-      </tr>
+      <GroupDetail key={name}/>
     );
   }
   render(){
@@ -16,16 +15,7 @@ class GroupList extends Component{
       <section id="group-list">
         <div className="group-list bg-light container-fluid text-center">
           <h2>Resultado dos jogos</h2>
-          <table className="table table-hover">
-            <thead>
-              <tr>
-                <th>Grupo</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.props.groups.map(this.renderGroup)}
-            </tbody>
-          </table>
+          {this.props.groups.map(this.renderGroupDetail)}
         </div>
       </section>
     );

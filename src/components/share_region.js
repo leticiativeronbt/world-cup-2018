@@ -24,7 +24,7 @@ export default class ShareRegion extends Component{
               g+
             </div>
           </div>
-          <span className="align-bottom">Bolão da copa</span>
+          <a className="align-bottom" href="https://www.bolaoshow.com.br/users/sign_in">Bolão da copa</a>
         </div>
       </section>
     );
