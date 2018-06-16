@@ -1,7 +1,7 @@
 {
   "name": "world-cup-2018",
   "homepage": "http://leticiativeronbt.github.io/world-cup-2018",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
@@ -21,6 +21,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b build_0.1 -d build"
+    "deploy": "gh-pages -b master -d build"
   }
 }
