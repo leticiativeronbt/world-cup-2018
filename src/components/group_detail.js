@@ -10,10 +10,8 @@ export default class GroupDetail extends Component{
   renderRows(){
     return this.props.teamResults.map((team) => 
       {
-        const flag = this.props.flags.find((flag) => flag.name.startsWith(team.country));
-        var flagPath = "";
-        if(flag)
-          flagPath=flag.flag;
+        const flag = this.props.flags.find((flag) => flag.fifaCode ==  team.fifa_code);
+        const flagPath = flag.flag;
         
         return (
           <tr key={team.fifa_code}>

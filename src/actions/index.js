@@ -1,6 +1,6 @@
 import axios from 'axios';
 const GROUPS_URL = 'http://worldcup.sfg.io/teams/group_results';
-const FLAGS_URL = 'https://restcountries.eu/rest/v2/all?fields=name;flag';
+const FLAGS_URL = 'https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json';
 const TEAM_RESULTS_URL = 'http://worldcup.sfg.io/teams/results';
 
 export const FETCH_GROUPS = 'FETCH_GROUPS';

@@ -24,7 +24,7 @@ class GroupList extends Component{
       const groupResults = this.props.teamResults.filter((team) => team.group_letter == group.letter);
       const sortedResults = groupResults.sort((a, b) => b.points - a.points);
       return (
-          <GroupDetail key={group.letter} groupLetter={group.letter} flags={this.props.flags} teamResults={sortedResults}/>
+          <GroupDetail key={group.letter} groupLetter={group.letter} flags={this.props.flags.teams} teamResults={sortedResults}/>
         );
     } );
   }
