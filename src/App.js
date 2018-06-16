@@ -3,6 +3,7 @@ import GroupList from './containers/group_list';
 import ShareRegion from './components/share_region';
 import HeaderRegion from './components/header_region';
 import HowWorksRegion from './components/how_works_region';
+import logo from './logo.svg';
 
 export default class App extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class App extends Component {
       <div className="container-fluid">
         <nav className="navbar navbar-light bg-light">
           <a href="#">
-            <img src="../src/images/logo.png" alt=""/>
+            <img src={logo} alt="placar da copa"/>
           </a>
         </nav>
         <HeaderRegion/>
