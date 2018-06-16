@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 main div {
     padding: 15px;
     max-width: 125px;
@@ -8,8 +11,9 @@ main div {
     background-image: url('../src/images/img-neymar.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding: 50px;
-    padding-right: 200px;
+    padding: 100px;
+    padding-right: 300px;
+    padding-bottom: 200px;
 }
 
 .share-region{
@@ -27,7 +31,26 @@ main div {
 .img-chuteira{
     size: 100%;
 }
+
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.how-works-div{
+    padding-left: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.how-works-div p{
+    padding-top: 0.1em;
+}
+
+.display-5{
+    font-size: 2.4em;
+}
+
+.text-lighter{
+    font-weight: lighter;
 }

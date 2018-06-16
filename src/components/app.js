@@ -8,10 +8,10 @@ export default class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <nav className="site-header navbar navbar-expand-lg navbar-light bg-light">
-          <div className="d-flex flex-column flex-md-row justify-content-between font-weight-bold">
-          Placar da Copa do Mundo FIFA 2018
-          </div>
+        <nav className="navbar navbar-light bg-light">
+          <a href="#">
+            <img src="../src/images/logo.png" alt=""/>
+          </a>
         </nav>
         <HeaderRegion/>
         <HowWorksRegion/>
