@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import GroupList from '../containers/group_list';
-import ShareRegion from './share_region';
-import HeaderRegion from './header_region';
-import HowWorksRegion from './how_works_region';
+import GroupList from './containers/group_list';
+import ShareRegion from './components/share_region';
+import HeaderRegion from './components/header_region';
+import HowWorksRegion from './components/how_works_region';
 
 export default class App extends Component {
   render() {
