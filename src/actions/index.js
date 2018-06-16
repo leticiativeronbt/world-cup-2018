@@ -1,14 +1,22 @@
 import axios from 'axios';
-const ROOT_URL = 'https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json';
+const GROUPS_URL = 'http://worldcup.sfg.io/teams/group_results';
+const FLAGS_URL = 'https://restcountries.eu/rest/v2/all?fields=name;flag';
 
 export const FETCH_GROUPS = 'FETCH_GROUPS';
+export const FETCH_FLAGS = 'FETCH_FLAGS';
 
-export function fetchGroups(city){
-  //const request = axios.get(ROOT_URL);
-const request= [{"group":{"id":1,"letter":"A","teams":[{"team":{"id":1,"country":"Russia","fifa_code":"RUS","points":3,"goal_differential":5}},{"team":{"id":4,"country":"Uruguay","fifa_code":"URU","points":3,"goal_differential":1}},{"team":{"id":3,"country":"Egypt","fifa_code":"EGY","points":0,"goal_differential":-1}},{"team":{"id":2,"country":"Saudi Arabia","fifa_code":"KSA","points":0,"goal_differential":-5}}]}},{"group":{"id":2,"letter":"B","teams":[{"team":{"id":8,"country":"Iran","fifa_code":"IRN","points":3,"goal_differential":1}},{"team":{"id":6,"country":"Spain","fifa_code":"ESP","points":1,"goal_differential":0}},{"team":{"id":5,"country":"Portugal","fifa_code":"POR","points":1,"goal_differential":0}},{"team":{"id":7,"country":"Morocco","fifa_code":"MAR","points":0,"goal_differential":-1}}]}},{"group":{"id":3,"letter":"C","teams":[{"team":{"id":12,"country":"Denmark","fifa_code":"DEN","points":0,"goal_differential":0}},{"team":{"id":11,"country":"Peru","fifa_code":"PER","points":0,"goal_differential":0}},{"team":{"id":10,"country":"Australia","fifa_code":"AUS","points":0,"goal_differential":0}},{"team":{"id":9,"country":"France","fifa_code":"FRA","points":0,"goal_differential":0}}]}},{"group":{"id":4,"letter":"D","teams":[{"team":{"id":16,"country":"Nigeria","fifa_code":"NGA","points":0,"goal_differential":0}},{"team":{"id":15,"country":"Croatia","fifa_code":"CRO","points":0,"goal_differential":0}},{"team":{"id":14,"country":"Iceland","fifa_code":"ISL","points":0,"goal_differential":0}},{"team":{"id":13,"country":"Argentina","fifa_code":"ARG","points":0,"goal_differential":0}}]}},{"group":{"id":5,"letter":"E","teams":[{"team":{"id":20,"country":"Serbia","fifa_code":"SRB","points":0,"goal_differential":0}},{"team":{"id":19,"country":"Costa Rica","fifa_code":"CRC","points":0,"goal_differential":0}},{"team":{"id":18,"country":"Switzerland","fifa_code":"SUI","points":0,"goal_differential":0}},{"team":{"id":17,"country":"Brazil","fifa_code":"BRA","points":0,"goal_differential":0}}]}},{"group":{"id":6,"letter":"F","teams":[{"team":{"id":24,"country":"Korea Republic","fifa_code":"KOR","points":0,"goal_differential":0}},{"team":{"id":23,"country":"Sweden","fifa_code":"SWE","points":0,"goal_differential":0}},{"team":{"id":22,"country":"Mexico","fifa_code":"MEX","points":0,"goal_differential":0}},{"team":{"id":21,"country":"Germany","fifa_code":"GER","points":0,"goal_differential":0}}]}},{"group":{"id":7,"letter":"G","teams":[{"team":{"id":28,"country":"England","fifa_code":"ENG","points":0,"goal_differential":0}},{"team":{"id":27,"country":"Tunisia","fifa_code":"TUN","points":0,"goal_differential":0}},{"team":{"id":26,"country":"Panama","fifa_code":"PAN","points":0,"goal_differential":0}},{"team":{"id":25,"country":"Belgium","fifa_code":"BEL","points":0,"goal_differential":0}}]}},{"group":{"id":8,"letter":"H","teams":[{"team":{"id":30,"country":"Senegal","fifa_code":"SEN","points":0,"goal_differential":0}},{"team":{"id":31,"country":"Colombia","fifa_code":"COL","points":0,"goal_differential":0}},{"team":{"id":32,"country":"Japan","fifa_code":"JPN","points":0,"goal_differential":0}},{"team":{"id":29,"country":"Poland","fifa_code":"POL","points":0,"goal_differential":0}}]}}];
-
-return {
-    type: FETCH_GROUPS,
-    payload: request
+export function fetchGroups(){
+  const request = axios.get(GROUPS_URL);
+  return {
+      type: FETCH_GROUPS,
+      payload: request
   };
 }
+
+export function fetchFlags(){
+  const request = axios.get(FLAGS_URL);
+  return {
+    type: FETCH_FLAGS,
+    payload: request
+  }
+};
