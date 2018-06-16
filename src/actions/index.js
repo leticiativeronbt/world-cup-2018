@@ -1,10 +1,10 @@
 import axios from 'axios';
 const GROUPS_URL = 'http://worldcup.sfg.io/teams/group_results';
-const FLAGS_URL = 'https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json';
+const TEAMS_URL = 'https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json';
 const TEAM_RESULTS_URL = 'http://worldcup.sfg.io/teams/results';
 
 export const FETCH_GROUPS = 'FETCH_GROUPS';
-export const FETCH_FLAGS = 'FETCH_FLAGS';
+export const FETCH_TEAMS = 'FETCH_TEAMS';
 export const FETCH_TEAM_RESULTS = 'FETCH_TEAM_RESULTS';
 
 export function fetchGroups(){
@@ -15,10 +15,10 @@ export function fetchGroups(){
   };
 }
 
-export function fetchFlags(){
-  const request = axios.get(FLAGS_URL);
+export function fecthTeams(){
+  const request = axios.get(TEAMS_URL);
   return {
-    type: FETCH_FLAGS,
+    type: FETCH_TEAMS,
     payload: request
   }
 };

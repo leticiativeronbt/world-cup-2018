@@ -4,27 +4,27 @@ export default class GroupDetail extends Component{
   constructor(props){
     super(props);
     
-    this.state = { groupLetter: '', flags: {}, teamResults: {} };
+    this.state = { groupLetter: '', teams: {}, teamResults: {} };
   }
 
   renderRows(){
-    return this.props.teamResults.map((team) => 
+    return this.props.teamResults.map((teamResult) => 
       {
-        const flag = this.props.flags.find((flag) => flag.fifaCode ==  team.fifa_code);
-        const flagPath = flag.flag;
+        const team = this.props.teams.find((flag) => flag.fifaCode ==  teamResult.fifa_code);
+        const flagPath = team.flag;
         
         return (
-          <tr key={team.fifa_code}>
+          <tr key={teamResult.fifa_code}>
             <td><img src={flagPath} width="32" height="20"/></td>
-            <td><abbr title={team.country} className="initialism">{team.fifa_code}</abbr></td>
-            <td>{team.points}</td>
-            <td>{team.games_played}</td>
-            <td>{team.wins}</td>
-            <td>{team.draws}</td>
-            <td>{team.losses}</td>
-            <td>{team.goals_for}</td>
-            <td>{team.goals_against}</td>
-            <td>{team.goal_differential}</td>
+            <td><abbr title={teamResult.country} className="initialism">{teamResult.fifa_code}</abbr></td>
+            <td>{teamResult.points}</td>
+            <td>{teamResult.games_played}</td>
+            <td>{teamResult.wins}</td>
+            <td>{teamResult.draws}</td>
+            <td>{teamResult.losses}</td>
+            <td>{teamResult.goals_for}</td>
+            <td>{teamResult.goals_against}</td>
+            <td>{teamResult.goal_differential}</td>
           </tr>
         );
       }

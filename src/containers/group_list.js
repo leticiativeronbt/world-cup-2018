@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import { fetchGroups } from '../actions/index';
-import { fetchFlags } from '../actions/index';
+import { fecthTeams } from '../actions/index';
 import { fetchTeamResults } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
@@ -12,9 +12,9 @@ class GroupList extends Component{
   constructor(props){
     super(props);
 
-    this.state = { groups: [], flags: [], teamResults: [] };
+    this.state = { groups: [], teams: [], teamResults: [] };
     this.props.fetchGroups();
-    this.props.fetchFlags();
+    this.props.fecthTeams();
     this.props.fetchTeamResults();
   }
 
@@ -24,13 +24,13 @@ class GroupList extends Component{
       const groupResults = this.props.teamResults.filter((team) => team.group_letter == group.letter);
       const sortedResults = groupResults.sort((a, b) => b.points - a.points);
       return (
-          <GroupDetail key={group.letter} groupLetter={group.letter} flags={this.props.flags.teams} teamResults={sortedResults}/>
+          <GroupDetail key={group.letter} groupLetter={group.letter} teams={this.props.teams} teamResults={sortedResults}/>
         );
     } );
   }
  
   render(){
-    if(!this.props.groups || !this.props.flags || !this.props.teamResults)
+    if(!this.props.groups || !this.props.teams || !this.props.teamResults)
       return (<div className="group-list bg-light container-fluid text-center"> Carregando... </div>);
 
     return(
@@ -48,15 +48,18 @@ class GroupList extends Component{
 
 
 function mapStateToProps(state){
+  if(!state.teams || !state.groups || !state.teamResults || !state.teams.data)
+    return {};
+
   return { 
     groups: state.groups.data,
-    flags: state.flags.data,
+    teams: state.teams.data.teams,
     teamResults: state.teamResults.data
   };
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({ fetchGroups, fetchFlags, fetchTeamResults }, dispatch);
+  return bindActionCreators({ fetchGroups, fecthTeams, fetchTeamResults }, dispatch);
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(GroupList);
