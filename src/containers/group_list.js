@@ -36,7 +36,7 @@ class GroupList extends Component{
     return(
       <section id="group-list">
         <div className="group-list bg-light container-fluid text-center">
-          <span className="display-5 text-lighter p-5">Resultado dos jogos</span>
+          <p className="display-6">Resultado dos jogos</p>
           <div className="row">
             {this.renderList()}
           </div>

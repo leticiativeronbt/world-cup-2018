@@ -34,9 +34,14 @@ export default class GroupDetail extends Component{
   render(){
     return (
       <div className="col-sm-6">
-        <h4>Grupo {this.props.groupLetter}</h4>
-        <table className="table table-hover">
-          <thead>
+        <h5>Grupo {this.props.groupLetter}</h5>
+        <table className="table table-hover table-sm">
+          <colgroup>
+            <col></col>
+            <col></col>
+            <col className="bg-white highlight-col"></col>
+          </colgroup>
+          <thead className="thead-light">
             <tr>
               <th></th>
               <th></th>
