@@ -1,5 +1,6 @@
 {
-  "name": "teste",
+  "name": "world-cup-2018",
+  "homepage" : "http://leticiativeronbt.github.io/world-cup-2018",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
