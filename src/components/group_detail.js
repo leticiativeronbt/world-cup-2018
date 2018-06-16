@@ -42,14 +42,14 @@ export default class GroupDetail extends Component{
             <tr>
               <th></th>
               <th></th>
-              <th>P</th>
-              <th>J</th>
-              <th>V</th>
-              <th>E</th>
-              <th>D</th>
-              <th>GP</th>
-              <th>GC</th>
-              <th>SG</th>
+              <th><abbr title="Pontuação" className="initialism">P</abbr></th>
+              <th><abbr title="Partidas Jogadas" className="initialism">J</abbr></th>
+              <th><abbr title="Vitórias" className="initialism">V</abbr></th>
+              <th><abbr title="Empates" className="initialism">E</abbr></th>
+              <th><abbr title="Derrotas" className="initialism">D</abbr></th>
+              <th><abbr title="Gols Pró (Realizados)" className="initialism">GP</abbr></th>
+              <th><abbr title="Gols Contra (Sofridos)" className="initialism">GC</abbr></th>
+              <th><abbr title="Saldo de Gols" className="initialism">SG</abbr></th>
             </tr>
           </thead>
           <tbody>
