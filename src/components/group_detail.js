@@ -4,13 +4,12 @@ export default class GroupDetail extends Component{
   constructor(props){
     super(props);
     
-    this.state = { group: {}, flags:{} };
+    this.state = { groupLetter: '', flags: {}, teamResults: {} };
   }
 
   renderRows(){
-    return this.props.group.teams.map((teamData) => 
+    return this.props.teamResults.map((team) => 
       {
-        const team = teamData.team;
         const flag = this.props.flags.find((flag) => flag.name.startsWith(team.country));
         var flagPath = "";
         if(flag)
@@ -19,13 +18,14 @@ export default class GroupDetail extends Component{
         return (
           <tr key={team.fifa_code}>
             <td><img src={flagPath} width="32" height="20"/></td>
-            <td><abbr title={team.country} class="initialism">{team.fifa_code}</abbr></td>
+            <td><abbr title={team.country} className="initialism">{team.fifa_code}</abbr></td>
             <td>{team.points}</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td>{team.games_played}</td>
+            <td>{team.wins}</td>
+            <td>{team.draws}</td>
+            <td>{team.losses}</td>
+            <td>{team.goals_for}</td>
+            <td>{team.goals_against}</td>
             <td>{team.goal_differential}</td>
           </tr>
         );
@@ -36,7 +36,7 @@ export default class GroupDetail extends Component{
   render(){
     return (
       <div className="col-sm-6">
-        <h4>Grupo {this.props.group.letter}</h4>
+        <h4>Grupo {this.props.groupLetter}</h4>
         <table className="table table-hover">
           <thead>
             <tr>
@@ -45,6 +45,7 @@ export default class GroupDetail extends Component{
               <th>P</th>
               <th>J</th>
               <th>V</th>
+              <th>E</th>
               <th>D</th>
               <th>GP</th>
               <th>GC</th>
