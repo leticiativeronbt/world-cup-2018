@@ -14,7 +14,7 @@ export default class HowWorksRegion extends Component{
               </div>
             </div>
             <div className="col-md-6">
-              <img className="img-thumbnail border-0 m-0 rounded-0 p-0" src={chuteira}/>
+              <img className="img-thumbnail border-0 m-0 rounded-0 p-0" src={chuteira} alt="chuteira"/>
             </div>
           </div>
       </section>

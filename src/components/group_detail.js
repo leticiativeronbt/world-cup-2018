@@ -10,12 +10,12 @@ export default class GroupDetail extends Component{
   renderRows(){
     return this.props.teamResults.map((teamResult) => 
       {
-        const team = this.props.teams.find((flag) => flag.fifaCode ==  teamResult.fifa_code);
+        const team = this.props.teams.find((flag) => flag.fifaCode === teamResult.fifa_code);
         const flagPath = team.flag;
         
         return (
           <tr key={teamResult.fifa_code}>
-            <td><img src={flagPath} width="32" height="20"/></td>
+            <td><img src={flagPath} width="32" height="20" alt="bandeira"/></td>
             <td><abbr title={teamResult.country} className="initialism">{teamResult.fifa_code}</abbr></td>
             <td>{teamResult.points}</td>
             <td>{teamResult.games_played}</td>

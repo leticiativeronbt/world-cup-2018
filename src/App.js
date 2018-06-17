@@ -11,7 +11,7 @@ export default class App extends Component {
       <div className="container-fluid">
         <nav className="navbar navbar-light bg-light">
           <a href="#">
-            <img src={logo} alt="placar da copa"/>
+            <img src={logo} alt="logo placar da copa"/>
           </a>
         </nav>
         <HeaderRegion/>

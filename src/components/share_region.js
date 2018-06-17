@@ -24,19 +24,19 @@ export default class ShareRegion extends Component{
           </div>
           <main className="flex-center">
             <div className="">
-              <a href={SHARE_FACEBOOK_URL} target="_blank"><img src={icon_facebook} href=""/></a>
+              <a href={SHARE_FACEBOOK_URL} target="_blank"><img src={icon_facebook} alt="compartilhar no facebook"/></a>
             </div>
             <div className="">
-              <a href={SHARE_TWITTER_URL} target="_blank"><img src={icon_twitter} href=""/></a>
+              <a href={SHARE_TWITTER_URL} target="_blank"><img src={icon_twitter} alt="compartilhar no twitter"/></a>
             </div>
             <div className="">
-              <a href={SHARE_RSS_URL} target="_blank"> <img src={icon_rss} href=""/></a>
+              <a href={SHARE_RSS_URL} target="_blank"> <img src={icon_rss} alt="compartilhar no rss"/></a>
             </div>
             <div className="">
-              <a href={SHARE_INSTAGRAM_URL} target="_blank"><img src={icon_instagram} href=""/></a>
+              <a href={SHARE_INSTAGRAM_URL} target="_blank"><img src={icon_instagram} alt="compartilhar no instagram"/></a>
             </div>
             <div className="">
-              <a href={SHARE_GOOGLE_URL} target="_blank"><img src={icon_google}/></a>
+              <a href={SHARE_GOOGLE_URL} target="_blank"><img src={icon_google} alt="compartilhar no google"/></a>
             </div>
           </main>
           <a className="align-bottom text-white" href="https://www.bolaoshow.com.br/users/sign_in"><small>BOLAOCOPA 2018</small></a>
