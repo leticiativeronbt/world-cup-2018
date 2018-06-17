@@ -38,3 +38,11 @@ body {
 .text-white-transparent{
   color: #ffffff88;
 }
+
+.text-light-green{
+  color: #7fc65b;
+}
+
+.bg-light-green{
+  background-color: #7fc65b;
+}

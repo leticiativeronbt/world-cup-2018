@@ -8,13 +8,14 @@ export default class GroupDetail extends Component{
   }
 
   renderRows(){
-    return this.props.teamResults.map((teamResult) => 
+    return this.props.teamResults.map((teamResult, index) => 
       {
-        const team = this.props.teams.find((flag) => flag.fifaCode === teamResult.fifa_code);
+        const team = this.props.teams.find((team) => team.fifaCode === teamResult.fifa_code);
         const flagPath = team.flag;
         const points = (teamResult.wins * 3) + teamResult.draws;
         return (
           <tr key={teamResult.fifa_code}>
+            <td>{index+1}&#176;</td>
             <td><img src={flagPath} width="32" height="18" alt="bandeira"/></td>
             <td><abbr title={teamResult.country} className="initialism">{teamResult.fifa_code}</abbr></td>
             <td>{points}</td>
@@ -35,8 +36,9 @@ export default class GroupDetail extends Component{
     return (
       <div className="col-sm-6 my-sm-2">
         <h5>Grupo {this.props.groupLetter}</h5>
-        <table className="table table-hover table-sm">
+        <table className="table table-hover">
           <colgroup>
+            <col></col>
             <col></col>
             <col></col>
             <col className="bg-white" style={{width: "9%" }}></col>
@@ -50,8 +52,7 @@ export default class GroupDetail extends Component{
           </colgroup>
           <thead className="table-light">
             <tr>
-              <th></th>
-              <th></th>
+              <th colSpan="3">Classificação</th>
               <th><abbr title="Pontuação" className="initialism">P</abbr></th>
               <th><abbr title="Partidas Jogadas" className="initialism">J</abbr></th>
               <th><abbr title="Vitórias" className="initialism">V</abbr></th>

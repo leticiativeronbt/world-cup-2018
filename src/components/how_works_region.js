@@ -9,7 +9,7 @@ export default class HowWorksRegion extends Component{
             <div className="col-sm-6 d-sm-flex flex-column align-middle justify-content-end pl-sm-5 pr-0">
               <div className="col-sm-2"></div>
               <div className="col">
-                <p className="text-success">COMO FUNCIONA</p>
+                <p className="text-light-green">COMO FUNCIONA</p>
                 <p className="display-5">Veja o resultado assim que o gol sair!</p>
                 <p >Abaixo você consegue visualizar o resultado de todos os jogos da Copa do Mundo 2018.</p>
               </div>

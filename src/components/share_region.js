@@ -16,7 +16,7 @@ export default class ShareRegion extends Component{
   render(){
     return (
       <section id="share-region">
-        <div className="bg-success container-fluid text-center text-white p-sm-5">
+        <div className="bg-light-green container-fluid text-center text-white p-sm-5">
           <div className="padding-50 font-weight-lighter pb-sm-4">
             <span className="display-5">Compartilhe com seus amigos!</span>
             <p className="text-white-transparent">
