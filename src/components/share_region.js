@@ -20,7 +20,7 @@ export default class ShareRegion extends Component{
         <div className="bg-success container-fluid text-center text-white p-sm-5">
           <div className="padding-50 font-weight-lighter pb-sm-4">
             <span className="display-5">Compartilhe com seus amigos!</span>
-            <p><small>Traga seus amigos para ver os resultados dos jogos!</small></p>
+            <p className="text-white-transparent"><small>Traga seus amigos para ver os resultados dos jogos!</small></p>
           </div>
           <div className="pt-sm-3">
               <main className="d-sm-flex justify-content-center">
@@ -40,7 +40,7 @@ export default class ShareRegion extends Component{
                   <a href={SHARE_GOOGLE_URL} target="_blank"><img src={icon_google} alt="compartilhar no google"/></a>
                 </div>
               </main>
-              <a className="text-white" href="https://www.bolaoshow.com.br/users/sign_in"><small>BOLAOCOPA 2018</small></a>
+              <a className="text-white-transparent" href="https://www.bolaoshow.com.br/users/sign_in"><small>BOLAOCOPA 2018</small></a>
           </div>
         </div>
       </section>

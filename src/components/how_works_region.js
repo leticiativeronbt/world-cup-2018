@@ -5,7 +5,7 @@ export default class HowWorksRegion extends Component{
   render(){
     return (
       <section id="how-works-region" className="header-region">
-          <div className="row">
+          <div className="row font-weight-lighter">
             <div className="col-sm-6 d-sm-flex flex-column align-middle justify-content-end pl-sm-5 pr-0">
               <div className="col-sm-2"></div>
               <div className="col">
