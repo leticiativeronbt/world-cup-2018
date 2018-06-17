@@ -21,7 +21,7 @@ class GroupList extends Component{
   renderList(){
     return this.props.groups.map((groupData) => {
       const group = groupData.group;
-      const groupResults = this.props.teamResults.filter((team) => team.group_letter == group.letter);
+      const groupResults = this.props.teamResults.filter((team) => team.group_letter === group.letter);
       const sortedResults = groupResults.sort((a, b) => b.points - a.points);
       return (
           <GroupDetail key={group.letter} groupLetter={group.letter} teams={this.props.teams} teamResults={sortedResults}/>
@@ -35,11 +35,9 @@ class GroupList extends Component{
 
     return(
       <section id="group-list">
-        <div className="group-list bg-light container-fluid text-center">
-          <p className="display-6">Resultado dos jogos</p>
-          <div className="row">
-            {this.renderList()}
-          </div>
+        <div className="group-list bg-light container-fluid text-center p-sm-5">
+          <p className="display-6 font-weight-lighter">Resultado dos jogos</p>
+          <div className="row">{this.renderList()}</div>
         </div>
       </section>
     );
