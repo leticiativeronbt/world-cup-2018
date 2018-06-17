@@ -15,7 +15,7 @@ export function fetchGroups(){
   };
 }
 
-export function fecthTeams(){
+export function fetchTeams(){
   const request = axios.get(TEAMS_URL);
   return {
     type: FETCH_TEAMS,

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import { fetchGroups } from '../actions/index';
-import { fecthTeams } from '../actions/index';
+import { fetchTeams } from '../actions/index';
 import { fetchTeamResults } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
@@ -61,7 +61,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({ fetchGroups, fecthTeams, fetchTeamResults }, dispatch);
+  return bindActionCreators({ fetchGroups, fetchTeams, fetchTeamResults }, dispatch);
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(GroupList);
