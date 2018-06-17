@@ -15,7 +15,7 @@ export default class GroupDetail extends Component{
         const points = (teamResult.wins * 3) + teamResult.draws;
         return (
           <tr key={teamResult.fifa_code}>
-            <td><img src={flagPath} width="32" height="20" alt="bandeira"/></td>
+            <td><img src={flagPath} width="32" height="18" alt="bandeira"/></td>
             <td><abbr title={teamResult.country} className="initialism">{teamResult.fifa_code}</abbr></td>
             <td>{points}</td>
             <td>{teamResult.games_played}</td>
