@@ -10,16 +10,13 @@ main div {
 }
 
 .header-region-content{
-  max-width: 370px;
+  max-width: 550px;
 }
 
 .div-with-bg-img{
   background-image: url('./images/img-neymar.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 100px;
-  padding-right: 300px;
-  padding-bottom: 200px;
 }
 
 .img-chuteira{
@@ -36,8 +33,4 @@ main div {
 
 .font-weight-lighter{
   font-weight: lighter;
-}
-
-.teste{
-  align-content: space-between
 }
