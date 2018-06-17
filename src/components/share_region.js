@@ -6,7 +6,7 @@ import icon_rss from '../images/icon-rss.png';
 import icon_instagram from '../images/icon-instagram.png';
 import icon_google from '../images/icon-google.png';
 
-const ROOT_URL = "www.teste.com.br";
+const ROOT_URL = "https://leticiativeronbt.github.io/world-cup-2018/";
 const SHARE_FACEBOOK_URL=`https://www.facebook.com/sharer/sharer.php?u=${ROOT_URL}`;
 const SHARE_TWITTER_URL=`https://twitter.com/home?status=${ROOT_URL}`;
 const SHARE_RSS_URL=`https://plus.google.com/share?url=${ROOT_URL}`;

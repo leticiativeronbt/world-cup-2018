@@ -12,12 +12,12 @@ export default class GroupDetail extends Component{
       {
         const team = this.props.teams.find((flag) => flag.fifaCode === teamResult.fifa_code);
         const flagPath = team.flag;
-        
+        const points = (teamResult.wins * 3) + teamResult.draws;
         return (
           <tr key={teamResult.fifa_code}>
             <td><img src={flagPath} width="32" height="20" alt="bandeira"/></td>
             <td><abbr title={teamResult.country} className="initialism">{teamResult.fifa_code}</abbr></td>
-            <td>{teamResult.points}</td>
+            <td>{points}</td>
             <td>{teamResult.games_played}</td>
             <td>{teamResult.wins}</td>
             <td>{teamResult.draws}</td>
@@ -33,15 +33,22 @@ export default class GroupDetail extends Component{
 
   render(){
     return (
-      <div className="col-sm-6">
+      <div className="col-sm-6 my-sm-2">
         <h5>Grupo {this.props.groupLetter}</h5>
         <table className="table table-hover table-sm">
           <colgroup>
             <col></col>
             <col></col>
-            <col className="bg-white"></col>
+            <col className="bg-white" style={{width: "9%" }}></col>
+            <col className="bg-light" style={{width: "9%" }}></col>
+            <col className="bg-white" style={{width: "9%" }}></col>
+            <col className="bg-light" style={{width: "9%" }}></col>
+            <col className="bg-white" style={{width: "9%" }}></col>
+            <col className="bg-light" style={{width: "9%" }}></col>
+            <col className="bg-white" style={{width: "9%" }}></col>
+            <col className="bg-light" style={{width: "9%" }}></col>
           </colgroup>
-          <thead className="thead-light">
+          <thead className="table-light">
             <tr>
               <th></th>
               <th></th>
