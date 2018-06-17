@@ -24,28 +24,28 @@ export default class ShareRegion extends Component{
             </p>
           </div>
           <div className="pt-sm-3">
-              <div className="d-sm-flex justify-content-center share-links">
-                <div>
+              <div className="d-sm-flex justify-content-center">
+                <div className="share-link">
                   <a href={SHARE_FACEBOOK_URL} target="_blank">
                     <img src={icon_facebook} alt="compartilhar no facebook"/>
                   </a>
                 </div>
-                <div>
+                <div className="share-link">
                   <a href={SHARE_TWITTER_URL} target="_blank">
                     <img src={icon_twitter} alt="compartilhar no twitter"/>
                   </a>
                 </div>
-                <div>
+                <div className="share-link">
                   <a href={SHARE_RSS_URL} target="_blank">
                     <img src={icon_rss} alt="compartilhar no rss"/>
                   </a>
                 </div>
-                <div>
+                <div className="share-link">
                   <a href={SHARE_INSTAGRAM_URL} target="_blank">
                     <img src={icon_instagram} alt="compartilhar no instagram"/>
                   </a>
                 </div>
-                <div>
+                <div className="share-link">
                   <a href={SHARE_GOOGLE_URL} target="_blank">
                     <img src={icon_google} alt="compartilhar no google"/>
                   </a>

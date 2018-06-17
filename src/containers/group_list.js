@@ -8,13 +8,13 @@ import { bindActionCreators } from 'redux';
 
 import GroupDetail from '../components/group_detail';
 
-class GroupList extends Component{
+export class GroupList extends Component{
   constructor(props){
     super(props);
 
     this.state = { groups: [], teams: [], teamResults: [] };
     this.props.fetchGroups();
-    this.props.fecthTeams();
+    this.props.fetchTeams();
     this.props.fetchTeamResults();
   }
 
@@ -31,7 +31,11 @@ class GroupList extends Component{
  
   render(){
     if(!this.props.groups || !this.props.teams || !this.props.teamResults)
-      return (<div className="group-list bg-light container-fluid text-center"> Carregando... </div>);
+      return (
+        <section id="group-list">
+          <div className="group-list bg-light container-fluid text-center"> Carregando... </div>
+        </section>
+      );
 
     return(
       <section id="group-list">
