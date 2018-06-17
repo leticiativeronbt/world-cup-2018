@@ -39,7 +39,7 @@ export default class GroupDetail extends Component{
           <colgroup>
             <col></col>
             <col></col>
-            <col className="bg-white highlight-col"></col>
+            <col className="bg-white"></col>
           </colgroup>
           <thead className="thead-light">
             <tr>
