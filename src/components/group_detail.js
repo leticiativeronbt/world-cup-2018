@@ -36,19 +36,19 @@ export default class GroupDetail extends Component{
     return (
       <div className="col-sm-6 my-sm-2">
         <h5>Grupo {this.props.groupLetter}</h5>
-        <table className="table table-hover">
+        <table className="table table-hover table-sm">
           <colgroup>
             <col></col>
             <col></col>
             <col></col>
-            <col className="bg-white" style={{width: "9%" }}></col>
-            <col className="bg-light" style={{width: "9%" }}></col>
-            <col className="bg-white" style={{width: "9%" }}></col>
-            <col className="bg-light" style={{width: "9%" }}></col>
-            <col className="bg-white" style={{width: "9%" }}></col>
-            <col className="bg-light" style={{width: "9%" }}></col>
-            <col className="bg-white" style={{width: "9%" }}></col>
-            <col className="bg-light" style={{width: "9%" }}></col>
+            <col className="bg-white" style={{width: "8%" }}></col>
+            <col className="bg-light" style={{width: "8%" }}></col>
+            <col className="bg-white" style={{width: "8%" }}></col>
+            <col className="bg-light" style={{width: "8%" }}></col>
+            <col className="bg-white" style={{width: "8%" }}></col>
+            <col className="bg-light" style={{width: "8%" }}></col>
+            <col className="bg-white" style={{width: "8%" }}></col>
+            <col className="bg-light" style={{width: "8%" }}></col>
           </colgroup>
           <thead className="table-light">
             <tr>
