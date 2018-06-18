@@ -8,7 +8,7 @@ import logo from './logo.svg';
 export default class App extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid" id="app">
         <nav className="navbar navbar-light bg-light">
           <a href="#">
             <img src={logo} alt="logo placar da copa"/>

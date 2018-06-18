@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import { fetchGroups } from '../actions/index';
-import { fecthTeams } from '../actions/index';
+import { fetchTeams } from '../actions/index';
 import { fetchTeamResults } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 import GroupDetail from '../components/group_detail';
 
-class GroupList extends Component{
+export class GroupList extends Component{
   constructor(props){
     super(props);
 
     this.state = { groups: [], teams: [], teamResults: [] };
     this.props.fetchGroups();
-    this.props.fecthTeams();
+    this.props.fetchTeams();
     this.props.fetchTeamResults();
   }
 
@@ -31,7 +31,11 @@ class GroupList extends Component{
  
   render(){
     if(!this.props.groups || !this.props.teams || !this.props.teamResults)
-      return (<div className="group-list bg-light container-fluid text-center"> Carregando... </div>);
+      return (
+        <section id="group-list-empty">
+          <div className="group-list bg-light container-fluid text-center"> Carregando... </div>
+        </section>
+      );
 
     return(
       <section id="group-list">
@@ -57,7 +61,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({ fetchGroups, fecthTeams, fetchTeamResults }, dispatch);
+  return bindActionCreators({ fetchGroups, fetchTeams, fetchTeamResults }, dispatch);
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(GroupList);
