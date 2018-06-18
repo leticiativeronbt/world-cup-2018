@@ -32,7 +32,7 @@ export class GroupList extends Component{
   render(){
     if(!this.props.groups || !this.props.teams || !this.props.teamResults)
       return (
-        <section id="group-list">
+        <section id="group-list-empty">
           <div className="group-list bg-light container-fluid text-center"> Carregando... </div>
         </section>
       );
