@@ -1,7 +1,7 @@
 import axios from 'axios';
-const GROUPS_URL = 'https://world-cup-json.herokuapp.com/teams/group_results';
-const TEAMS_URL = 'https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json';
-const TEAM_RESULTS_URL = 'https://world-cup-json.herokuapp.com/teams/results';
+const GROUPS_URL = 'https://worldcup.sfg.io/teams/group_results';
+const TEAMS_URL = 'https://worldcup.sfg.io/teams/';
+const TEAM_RESULTS_URL = 'https://worldcup.sfg.io/teams/results';
 
 export const FETCH_GROUPS = 'FETCH_GROUPS';
 export const FETCH_TEAMS = 'FETCH_TEAMS';

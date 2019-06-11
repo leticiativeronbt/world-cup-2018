@@ -55,7 +55,7 @@ function mapStateToProps(state){
 
   return { 
     groups: state.groups.data,
-    teams: state.teams.data.teams,
+    teams: state.teams.data,
     teamResults: state.teamResults.data
   };
 }
