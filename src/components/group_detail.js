@@ -11,6 +11,8 @@ export default class GroupDetail extends Component{
     return this.props.teamResults.map((teamResult, index) => 
       {
         const team = this.props.teams.find((team) => team.fifaCode === teamResult.fifa_code);
+        if(!team) return null
+
         const flagPath = team.flag;
         const points = (teamResult.wins * 3) + teamResult.draws;
         return (

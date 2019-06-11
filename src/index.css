@@ -14,7 +14,7 @@ body {
 }
 
 .div-with-bg-img{
-  background-image: url('./images/img-neymar.png');
+  background-image: url('./images/img-hero.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

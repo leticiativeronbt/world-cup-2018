@@ -52,7 +52,7 @@ export default class ShareRegion extends Component{
                 </div>
               </div>
               <a className="text-white-transparent" href="https://www.bolaoshow.com.br/users/sign_in">
-                <small>BOLAOCOPA 2018</small>
+                <small>BOLAOCOPA 2019</small>
               </a>
           </div>
         </div>

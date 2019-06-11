@@ -20,7 +20,7 @@ export class GroupList extends Component{
 
   renderList(){
     return this.props.groups.map((groupData) => {
-      const group = groupData.group;
+      const group = groupData;
       const groupResults = this.props.teamResults.filter((team) => team.group_letter === group.letter);
       const sortedResults = groupResults.sort((a, b) => b.points - a.points);
       return (
