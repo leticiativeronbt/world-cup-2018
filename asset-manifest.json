@@ -1,9 +1,18 @@
 {
-  "main.css": "static/css/main.14e9af78.css",
-  "main.css.map": "static/css/main.14e9af78.css.map",
-  "main.js": "static/js/main.7560dc3a.js",
-  "main.js.map": "static/js/main.7560dc3a.js.map",
-  "static/media/img-chuteira.png": "static/media/img-chuteira.7534cfd3.png",
-  "static/media/img-neymar.png": "static/media/img-neymar.82ae8d50.png",
-  "static/media/logo.svg": "static/media/logo.0fe578be.svg"
+  "files": {
+    "main.css": "/world-cup-2018/static/css/main.a8c388fe.chunk.css",
+    "main.js": "/world-cup-2018/static/js/main.2a064626.chunk.js",
+    "main.js.map": "/world-cup-2018/static/js/main.2a064626.chunk.js.map",
+    "runtime~main.js": "/world-cup-2018/static/js/runtime~main.bb923f13.js",
+    "runtime~main.js.map": "/world-cup-2018/static/js/runtime~main.bb923f13.js.map",
+    "static/js/2.ba83b26d.chunk.js": "/world-cup-2018/static/js/2.ba83b26d.chunk.js",
+    "static/js/2.ba83b26d.chunk.js.map": "/world-cup-2018/static/js/2.ba83b26d.chunk.js.map",
+    "index.html": "/world-cup-2018/index.html",
+    "precache-manifest.37e666dc172b88f092a8eac1a710eb61.js": "/world-cup-2018/precache-manifest.37e666dc172b88f092a8eac1a710eb61.js",
+    "service-worker.js": "/world-cup-2018/service-worker.js",
+    "static/css/main.a8c388fe.chunk.css.map": "/world-cup-2018/static/css/main.a8c388fe.chunk.css.map",
+    "static/media/img-chuteira.png": "/world-cup-2018/static/media/img-chuteira.7534cfd3.png",
+    "static/media/index.css": "/world-cup-2018/static/media/img-hero.74360c79.png",
+    "static/media/logo.svg": "/world-cup-2018/static/media/logo.0fe578be.svg"
+  }
 }
